@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/paperNameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Paper(s)"
+            android:textAlignment="viewEnd"
+            android:textSize="15dp"
+             />
+
+        <TextView
+            android:id="@+id/paperPriceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:textAlignment="viewEnd"
+            android:textSize="15dp"
+             />
+
+        <TextView
+            android:id="@+id/paperQtyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Qty"
+            android:textAlignment="viewEnd"
+            android:textSize="15dp"
+             />
+
+        <TextView
+            android:id="@+id/paperTotalId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textAlignment="viewEnd"
+            android:textSize="15dp"
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>
