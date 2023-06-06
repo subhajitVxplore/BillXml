@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.vxplore.billxml.R
+import com.vxplore.billxml.models.VendorCoupon
 import com.vxplore.billxml.models.VendorPaper
 
-class CouponsAdapter(private val mList: List<VendorPaper>) : RecyclerView.Adapter<CouponsAdapter.ViewHolder>() {
+class CouponsAdapter(private val mList: List<VendorCoupon>) : RecyclerView.Adapter<CouponsAdapter.ViewHolder>() {
   
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -21,11 +22,10 @@ class CouponsAdapter(private val mList: List<VendorPaper>) : RecyclerView.Adapte
   
         val ItemsModel = mList[position]
 
-  
         holder.paperNameId.text = ItemsModel.name
-        holder.paperPriceId.text = ItemsModel.unitPrice.toString()
+        holder.paperPriceId.text = ItemsModel.price.toString()
         holder.paperQtyId.text = ItemsModel.quantity.toString()
-        holder.paperTotalId.text = ItemsModel.effectiveUnitPrice.toString()
+        holder.paperTotalId.text = ItemsModel.newPrice.toString()
 
     }
   

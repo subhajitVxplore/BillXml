@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.vxplore.billxml.R
+import com.vxplore.billxml.models.VendorExtraPaper
 import com.vxplore.billxml.models.VendorPaper
 
-class ReturnPaperAdapter(private val mList: List<VendorPaper>) : RecyclerView.Adapter<ReturnPaperAdapter.ViewHolder>() {
+class ReturnPaperAdapter(private val mList: List<VendorExtraPaper>) : RecyclerView.Adapter<ReturnPaperAdapter.ViewHolder>() {
   
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
